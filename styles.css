@@ -1,0 +1,375 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+
+
+
+.index{
+   background-image: url("https://raw.githubusercontent.com/rukalogic/public_assets/refs/heads/main/pexels-atahandemir-30265371%20(1).jpg");
+  background-size: cover;          /* fills screen */
+  background-position: center;     /* centers it */
+  background-repeat: no-repeat;    /* no tiling */
+  background-attachment: fixed;    /* parallax effect */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+nav{
+   font-family: "Comfortaa", sans-serif;
+   font-size: 12px;
+}
+
+.aCtive {
+  color: #04d9ff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #04d9ff,
+                 0 0 20px #04d9ff,
+                 0 0 30px #04d9ff,
+                 0 0 40px #04d9ff,
+                 0 0 50px #04d9ff,
+                 0 0 60px #04d9ff,
+                 0 0 70px #04d9ff;
+  }
+  to {
+    text-shadow: 0 0 20px #04d9ff,
+                 0 0 30px #04d9ff,
+                 0 0 40px #04d9ff,
+                 0 0 50px #04d9ff,
+                 0 0 60px #04d9ff,
+                 0 0 70px #04d9ff,
+                 0 0 80px #04d9ff;
+  }
+}
+
+.index main{
+  flex: 1;                 /* body takes up the free space */
+  display: flex;           /* enable flexbox inside */
+  align-items: center;     /* centre vertically (within its space) */
+  justify-content: flex-start; /* align content left */
+  padding-left: 5%;       /* nudge it off-centre */
+  text-align: left;
+}
+
+#anthony{
+  font-size: 40px;
+}
+
+#toruka{
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+#anthony, #toruka, #hsg {
+  padding: 0px;
+  display: block;
+  margin: 0;
+  line-height: 0.5;
+}
+#hsg{
+  font-family: 'Consolas';
+  letter-spacing: 5.2px;
+}
+#resume
+{
+  border : 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding-left: 7px;
+  padding-right: 7px;
+  width: 100px;
+  border-radius: 10px;
+  font-family: "JetBrains Mono", monospace;
+  display: none;
+}
+a:hover{
+  text-decoration: none;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+#resume:hover{
+  color: #04d9ff;
+  animation: glow 1s ease-in-out infinite alternate;
+  border-color: #04d9ff;
+}
+
+.icons{
+  flex: 2;
+  color : white;
+  display: flex;
+  align-items: centre;
+  justify-content: flex-start;
+  padding-left: 5%;
+  padding-bottom: 2.5%;
+
+}
+
+/* CSS */
+
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+.fa-expand:hover
+{
+  transform: scale(1.25) ;
+}
+.appear
+{
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter : blur(5px);
+}
+
+.fa-instagram:hover, .fa-github:hover, .fa-google:hover, .fa-whatsapp:hover, .fa-linkedin:hover
+{
+  color: #04d9ff;
+  animation: glow 1s ease-in-out infinite alternate;
+  transform: scale(1.2);
+}
+
+.nav-link:hover{
+  color: #04d9ff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+
+/* ABOUT PAGE */
+.about {
+  background-image: url("https://raw.githubusercontent.com/rukalogic/public_assets/refs/heads/main/w2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  position: relative; /* required for overlay */
+}
+.about::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6); /* translucent black overlay */
+  z-index: 1;
+}
+
+.about * {
+  position: relative;
+  z-index: 2; /* keeps your text/buttons above the overlay */
+}
+
+.atext
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about main{
+  flex: 1;                 /* body takes up the free space */
+  display: flex;           /* enable flexbox inside */
+  align-items:flex-start;     /* centre vertically (within its space) */
+  justify-content: flex-start; /* align content left */
+  padding-left: 5%;       /* nudge it off-centre */
+  text-align: left;
+  padding-top: 5%;
+
+}
+
+#long-txt
+{
+  width: 100%;        /* takes full width of parent container */
+  max-width: 420px;
+  margin-top: 31px;
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  display: none;
+}
+
+#email
+{
+  line-height: 0.5;
+  font-size: 12px;
+  margin: 0;
+  font-family: monospace;
+}
+.upper h3{
+  display: inline-flex;
+  margin: 0;
+  font-size: 0.5;
+  border-bottom: #04d9ff solid 2px;
+  border-radius: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+
+}
+
+
+/* Resume Page */
+.resume
+{
+  background-image: url("https://raw.githubusercontent.com/rukalogic/public_assets/refs/heads/main/pexels-noah-erickson-97554-404280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+.resume::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6); /* translucent black overlay */
+  z-index: 1;
+}
+
+.resume * {
+  position: relative;
+  z-index: 2; /* keeps your text/buttons above the overlay */
+}
+.resume main{
+  display: flex;
+  flex-direction: row;
+  row-gap: 6px;
+  margin-top: 2.5%;
+}
+@media (max-width: 600px) {
+  .resume main {
+    flex-direction: column; /* switch to vertical */
+    column-gap: 10px;
+  }
+  .d1, .d2, .d3{
+    width: 100%;
+    padding-left: 5%;
+  }
+  .ic{
+    display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 equal-width columns */
+  grid-template-rows: auto auto; /* 2 rows */
+  gap: 10px; /* spacing between items */
+  }
+  .d3, .d2{
+    padding-top: 10px;
+  }
+}
+
+.d1{
+  padding-left: 5%;
+}
+
+
+
+.bar {
+  display: inline-block;
+  height: 8px;
+  background:#333;
+  border-radius:999px;
+  width: 200px ;
+}
+.fill {
+  height: 100%; background:#04d9ff; border-radius:999px;
+}
+.language{
+  display: block;
+}
+
+.d1 h6{
+  display: inline;
+  font-size: 0.5;
+  border-bottom: #04d9ff solid 2px;
+  border-radius: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 21px;
+}
+.d2 h6{
+  display: inline;
+  font-size: 0.5;
+  border-bottom: #04d9ff solid 2px;
+  border-radius: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.hobby{
+  display: block;
+  font-family: "Comfortaa", sans-serif;
+  font-size: small;
+}
+
+.d3 h6{
+  display: inline;
+  font-size: 0.5;
+  border-bottom: #04d9ff solid 2px;
+  border-radius: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.d3{
+  width: 40%;
+  padding-left: 5%;
+}
+
+.d2{
+  width: 30%;
+  padding-left: 5%;
+}
+.d1{
+    width: 30%;
+    column-gap: 20px;
+}
+
+.year
+{
+  margin-right: 12px;
+  align-self: center;
+  font-family: "Bodoni Moda", serif;
+  font-size: 18px;
+}
+.ex{
+  row-gap: 4px;
+}
+.hd{
+  margin-bottom: 10px;
+}
+
+.comfortaa {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: small;
+}
+
+
